@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
 }
+/* SPLASH PAGE */
  #search-container{
   width: 100%;
   height: 100vh;
@@ -13,9 +14,9 @@
 .input-container input {
 	padding-bottom: 1em;
 }
-input {
+#search-container input {
   width: 100%;
-  padding: 1em !important;
+  padding: .5em 1em !important;
   margin: 1em  .6em !important;
   box-sizing: border-box;
   font-size: 20px;
@@ -27,7 +28,7 @@ input {
 input:focus{
   outline-width: 0;
 }
-::placeholder {
+#search-container ::placeholder {
   color: #fff;
 }
 .right-inner-addon {
@@ -41,8 +42,8 @@ input:focus{
 }
 .right-inner-addon i {
   position: absolute;
-  right: 5px;
-  top: 27px;
+  right: 0px;
+  top: 17px;
   font-size: 24px;
   padding: 13px;
   pointer-events: none;
@@ -51,3 +52,5 @@ input:focus{
 .right-inner-addon i:hover {
   cursor: pointer;
 }
+/* COMPONENT : LOGIN INPUTS */
+/**TODO: complete the login page jsx and css*/

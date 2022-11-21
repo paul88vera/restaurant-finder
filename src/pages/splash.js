@@ -1,4 +1,5 @@
 import React from 'react';
+import Login from '../components/Login';
 
 export default function Splash() {
   return (
@@ -7,8 +8,9 @@ export default function Splash() {
       <i className="fa fa-map-marker"></i>
             <input type="text"
                    className="form-control" 
-                   placeholder="Enter a city" />
+                   placeholder="San Antonio" />
         </form>
+        <Login />
     </section>
   
   );
