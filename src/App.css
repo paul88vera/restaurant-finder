@@ -2,27 +2,52 @@
   margin: 0;
   padding: 0;
 }
-#search-container{
+ #search-container{
   width: 100%;
   height: 100vh;
-  background-color: #00000099;
+  background-image: url(/public/assets/img/AdobeStock_301716089_Preview.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: top;
+} 
+.input-container input {
+	padding-bottom: 1em;
 }
-#search-container input[type="search"] {
-  padding: .6em;
-  width: 95%;
+input {
+  width: 100%;
+  padding: 1em !important;
+  margin: 1em  .6em !important;
+  box-sizing: border-box;
+  font-size: 20px;
+  border-radius: 50px;
+  border: 1px solid #fff;
+  color: #ffffff !important;
+  background-color: transparent !important;
+}
+input:focus{
+  outline-width: 0;
+}
+::placeholder {
+  color: #fff;
+}
+.right-inner-addon {
+  position: absolute;
+    font-size: 20px;
+    width: 92%;
+    color: #ffffff;
+}
+.form-control {
   position: relative;
-  top: 15px;
-  margin: 0 auto;
-  max-width: 600px;
-  font-size: 1.2em;
-  display: block;
-  border-radius: 20px;
-  background-color: transparent;
-  border: #ffffff solid 1px;
+}
+.right-inner-addon i {
+  position: absolute;
+  right: 5px;
+  top: 27px;
+  font-size: 24px;
+  padding: 13px;
+  pointer-events: none;
   color: #ffffff;
 }
-#search-container input[type="search"]::after{
-  content: "";
-  background: transparent url('/public/assets/img/T.png');
+.right-inner-addon i:hover {
   cursor: pointer;
 }
