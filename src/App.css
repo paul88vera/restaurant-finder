@@ -3,7 +3,7 @@
   padding: 0;
 }
 /* SPLASH PAGE */
- #search-container{
+ #splash-container{
   width: 100%;
   height: 100vh;
   background-image: url(/public/assets/img/AdobeStock_301716089_Preview.png);
@@ -14,10 +14,16 @@
 .input-container input {
 	padding-bottom: 1em;
 }
+#search-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
 #search-container input {
   width: 100%;
   padding: .5em 1em !important;
-  margin: 1em  .6em !important;
+  margin: 1em  auto !important;
   box-sizing: border-box;
   font-size: 20px;
   border-radius: 50px;
@@ -42,7 +48,7 @@ input:focus{
 }
 .right-inner-addon i {
   position: absolute;
-  right: 0px;
+  right: 10px;
   top: 17px;
   font-size: 24px;
   padding: 13px;
@@ -53,4 +59,54 @@ input:focus{
   cursor: pointer;
 }
 /* COMPONENT : LOGIN INPUTS */
-/**TODO: complete the login page jsx and css*/
+#login-container{
+  width: 100%;
+  height: 100vh;
+  background-image: url(/public/assets/img/AdobeStock_301716089_Preview.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: top;
+  position: relative;
+} 
+#login-form{
+  height: auto;
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 17%;
+}
+#login-form input, #login-form button {
+  display: block;
+  box-sizing: border-box;
+  padding: 1.2em 1.5em;
+  border-radius: 50px;
+  border: none;
+  width: 80%;
+  font-size: 20px;
+  margin: 0 auto;
+}
+#login-form input {
+  background-color: rgba(0, 0, 0, 0.53);
+  backdrop-filter:blur(2px);
+  border: rgb(88, 88, 88) solid 1px;
+  color: #fff;
+}
+#login-form ::placeholder {
+  color: #fff;
+}
+#login-form button {
+  background-color: rgb(36, 112, 61);
+  color: #fff;
+  font-weight: 600;
+}
+#login-form .signup-para {
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+}
+#login-form .signup-para:hover {
+  color: rgb(0, 255, 8);
+}
+/* HOME PAGE  */
+/*TODO: complete the homepageç*/
