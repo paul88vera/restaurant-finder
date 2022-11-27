@@ -1,5 +1,4 @@
 import Search from '../components/Search';
-import Signup from './signup';
 
 export default function Login (){
   return (
@@ -12,7 +11,7 @@ export default function Login (){
       <br/><br/>
       <button type='submit'>Sign In</button>
     <br/><br/>
-    <a href={<Signup />} className="signup-para">Don't have an account? Sign Up!</a>
+    <a href="/signup" className="signup-para">Don't have an account? Sign Up!</a>
     </form>
   </section>
   )

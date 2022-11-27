@@ -99,6 +99,10 @@ input:focus{
   color: #fff;
   font-weight: 600;
 }
+#login-form button:hover {
+  cursor: pointer;
+  background-color: rgb(23, 73, 39);
+}
 #login-form .signup-para {
   color: #fff;
   text-decoration: none;
@@ -106,7 +110,63 @@ input:focus{
   display: block;
 }
 #login-form .signup-para:hover {
-  color: rgb(0, 255, 8);
+  color: rgb(11, 235, 255);
+}
+/* SIGNUP PAGE */
+#signup-container {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  /* background-image: url(/public/assets/img/AdobeStock_301716089_Preview.png); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: top;
+  position: relative;
+  color: #fff;
+}
+#signup-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  color: #fff;
+  max-width: 100%;
+  margin-top: 8em;
+}
+#signup-form label {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  font-size: 14px;
+}
+#signup-form input {
+  background-color: transparent;
+  border: none;
+  padding: .6em 0;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  border-bottom: solid #fff 1px;
+}
+#signup-form ::placeholder{
+  color: rgba(255, 255, 255, 0.314);
+  font-weight: 600;
+  font-size: 20px;
+}
+#signup-form button {
+  background-color: rgb(36, 112, 61);
+  color: #fff;
+  font-weight: 600;
+  padding: 1.5rem 2rem;
+  font-size: 18px;
+  border: none;
+  width: 70%;
+  border-radius: 50px;
+}
+#signup-form button:hover {
+  cursor: pointer;
+  background-color: rgb(23, 73, 39);
 }
 /* HOME PAGE  */
-/*TODO: complete the homepageç*/
+/*TODO: complete the homepage*/
