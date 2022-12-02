@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Home from './pages/home';
+import Browse from './pages/browse';
 import Login from './pages/login';
 import Signup from './pages/signup';
 import Splash from './pages/splash';
@@ -13,6 +14,7 @@ export default function App() {
     <Routes>
       <Route index path='/' element={<Splash />} />
       <Route path ="home" element={<Home />} />
+      <Route path ="browse" element={<Browse />} />
       <Route path ="login" element={<Login />} />
       <Route path='signup' element={<Signup />} />
       <Route path='*' element={<Error />} />
