@@ -1,11 +1,11 @@
 import Navbar from "../components/Navbar";
 
 export default function Item(prop) {
-prop = [
-  image:"#",
-  name: "restaurant",
+// prop = [
+//   image:"#",
+//   name: "restaurant",
   
-]
+// ]
   return (
     <div id="item" >
     {/* 
