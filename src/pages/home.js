@@ -6,8 +6,8 @@ import Navbar from '../components/Navbar';
 export default function Home() {
   return (
     <div id='home'>
-      <Banner />
       <Navbar />
+      <Banner />
 <br/>
       <section id='cuisine-choices'>
       <h4>What are you looking for?</h4>

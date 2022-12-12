@@ -1,28 +1,8 @@
-import Navbar from "../components/Navbar";
 
-export default function Item(prop) {
-// prop = [
-//   image:"#",
-//   name: "restaurant",
-  
-// ]
+export default function Item() {
   return (
     <div id="item" >
-    {/* 
-    img,
-    cuisine type,
-    Name,
-    details,
-    number,
-    map,
-    website link
-  */}
-      <Navbar />
-      <picture id='main-banner'>
-        <source media="(min-width:728px)" srcset="https://unsplash.it/1920" />
-        <img src="https://unsplash.it/500/350" width="100%" alt="" />
-      </picture>
-    <h2>name</h2>
+    <h2>name</h2>a
     <h4>cuisine</h4>
     <p>details</p>
 

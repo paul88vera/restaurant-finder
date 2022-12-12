@@ -190,17 +190,18 @@ input:focus{
   cursor: pointer;
 }
 /* HOME PAGE  */
-#main-banner {
-  position: absolute;
-}
 #main-banner img {
   box-sizing: border-box;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
 /* Cuisine for Homepage */
+.cuisine-main-link {
+  text-decoration: none;
+  color: inherit;
+}
 #cuisine-choices {
-  margin-top: 16em;
+  margin-top: 2em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -219,8 +220,7 @@ input:focus{
   justify-content: center;
   align-content: center;
   align-items: center;
-  gap: 1.7em;
-  margin: 0 0 3em 0;
+  gap: .7em;
 }
 .cuisine-contianer {
   max-width: 100%;
@@ -234,10 +234,9 @@ input:focus{
   position: relative;
 }
 .cuisine-type {
-  max-width: 100px;
-  width: 100px;
+  width: 114px;
   padding: .5em 1em;
-  border-radius: 25px;
+  border-radius: 20px;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.496);
 }
@@ -246,5 +245,5 @@ input:focus{
   top: 15px;
 }
 /* ITEM COMPONENT */
-/*TODO: Complete the Item component & Browse Page */
+/*TODO: Complete the Restaurant Item component & Browse Page */
 /* BROWSE PAGE */
