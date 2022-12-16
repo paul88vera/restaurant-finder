@@ -244,6 +244,34 @@ input:focus{
   position: relative;
   top: 15px;
 }
-/* ITEM COMPONENT */
+/* Restaurant Details COMPONENT */
+#restaurant {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+}
+.restaurant-details {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: left;
+  margin: 1em;
+}
+#social-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 1em 0;
+}
+#social-links img:nth-child(n-1) {
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
 /*TODO: Complete the Restaurant Item component & Browse Page */
 /* BROWSE PAGE */
