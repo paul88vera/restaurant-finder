@@ -19,16 +19,16 @@ const city = [
 ]
 
 const cuisine = [
-  {id: 1, name: "Mexican", cityId: 1},
-  {id: 2, name: "Seafood", cityId: 1},
-  {id: 3, name: "American", cityId: 2},
-  {id: 4, name: "Asian", cityId: 1},
+  {id: 1, name: "Mexican"},
+  {id: 2, name: "Seafood"},
+  {id: 3, name: "American"},
+  {id: 4, name: "Asian"},
 ]
 
 const restaurant = [
-  {id:1, name: "Chik-Fil-A", description: 'This is a fun chicken filled restaurant named Chik-Fil-A', cuisineId: 3},
-  {id: 2, name: "Chili's", description: 'This is a fun filled restaurant named Chilis', cuisineId: 3},
-  {id: 3, name: "Don Pedros", description: "This is a Mexican restaurant named Don Pedro's", cuisineId: 1}
+  { id:1, name: "Chik-Fil-A", description: 'This is a fun chicken filled restaurant named Chik-Fil-A', cuisineId: 3, cityId: 1 },
+  { id: 2, name: "Chili's", description: 'This is a fun filled restaurant named Chilis', cuisineId: 3, cityId: 2 },
+  { id: 3, name: "Don Pedros", description: "This is a Mexican restaurant named Don Pedro's", cuisineId: 1, cityId: 1 }
 ]
 
 const CuisineType = new GraphQLObjectType({
@@ -37,11 +37,6 @@ const CuisineType = new GraphQLObjectType({
   fields: () => ({
     id: { type: GraphQLNonNull(GraphQLInt) },
     name: { type: GraphQLNonNull(GraphQLString) },
-    cityId: { type: GraphQLNonNull(GraphQLInt) },
-    restaurant: {
-      type: new GraphQLList(RestaurantType),
-      resolve: (cuisine) => restaurant.filter(restaurant => restaurant.cuisineId === cuisine.id)
-    }
   })
 })
 
@@ -52,7 +47,20 @@ const RestaurantType = new GraphQLObjectType({
     id: { type: GraphQLNonNull(GraphQLInt) },
     name: { type: GraphQLNonNull(GraphQLString) },
     description: { type: GraphQLNonNull(GraphQLString) },
+    cityId: { type: GraphQLNonNull(GraphQLInt) },
     cuisineId: { type: GraphQLNonNull(GraphQLInt) },
+    cuisine: {
+      type: CuisineType,
+      resolve: (restaurant) => {
+        return cuisine.find(cuisine => cuisine.id === restaurant.cuisineId)
+      }
+    },
+    city: {
+      type: CityType,
+      resolve: (restaurant) => {
+        return city.find(city => city.id === restaurant.cityId)
+      }
+    }
   })
 })
 
@@ -61,14 +69,7 @@ const CityType = new GraphQLObjectType({
   description: 'This is a city to find types of food',
   fields: () => ({
     id: { type: GraphQLNonNull(GraphQLInt) },
-    name: { type: GraphQLNonNull(GraphQLString) },
-    cuisine: {
-      type: GraphQLList(CuisineType),
-
-
-      // TODO: Need to fix this area STAT!!
-      resolve: (city) => cuisine.find(cuisine => city.id === cuisine.cityId)
-    }
+    name: { type: GraphQLNonNull(GraphQLString) }
   })
 })
 
@@ -76,16 +77,23 @@ const RootQueryType = new GraphQLObjectType({
   name: 'Query',
   description: 'Root Query',
   fields: () => ({
-    city: {
-      type:  new GraphQLList(CityType),
-      description: "List of All cities",
-      resolve: () => city
+    restaurants: {
+      type: new GraphQLList(RestaurantType),
+      description: 'List of All restaurants',
+      resolve: () => restaurant
     },
-    cuisine: {
-      type: new GraphQLList(CuisineType),
-      description: 'List of All cuisine',
-      resolve: () => cuisine
-    }
+    // city: {
+    //   type:  new GraphQLList(CityType),
+    //   description: "List of All cities",
+    //   resolve: () => city
+    // },
+    // cuisine: {
+    //   type: new GraphQLList(CuisineType),
+    //   description: 'List of All cuisine',
+    //   resolve: (parent) => cuisine
+    // },
+    
+
   })
 })
 
