@@ -1,3 +1,0 @@
-DROP DATABASE IF EXISTS rest_db;
-
-CREATE DATABASE rest_db;

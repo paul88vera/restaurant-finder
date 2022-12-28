@@ -1,4 +1,3 @@
-const { type } = require('@testing-library/user-event/dist/type');
 const express = require('express');
 
 const expressGraphQL = require('express-graphql').graphqlHTTP;
@@ -81,19 +80,7 @@ const RootQueryType = new GraphQLObjectType({
       type: new GraphQLList(RestaurantType),
       description: 'List of All restaurants',
       resolve: () => restaurant
-    },
-    // city: {
-    //   type:  new GraphQLList(CityType),
-    //   description: "List of All cities",
-    //   resolve: () => city
-    // },
-    // cuisine: {
-    //   type: new GraphQLList(CuisineType),
-    //   description: 'List of All cuisine',
-    //   resolve: (parent) => cuisine
-    // },
-    
-
+    }
   })
 })
 
