@@ -80,6 +80,11 @@ const RootQueryType = new GraphQLObjectType({
       type: new GraphQLList(RestaurantType),
       description: 'List of All restaurants',
       resolve: () => restaurant
+    },
+    city: {
+      type: new GraphQLList(CityType),
+      description: 'List of All cities',
+      resolve: () => city
     }
   })
 })
