@@ -1,13 +1,10 @@
-import React, { Component } from 'react';
+const Mexican = () => {
 
-class Mexican extends Component {
-  render() {
     return (
-      <div>
-        
+      <div id="mexican">
+        Mexican page
       </div>
     );
   }
-}
 
 export default Mexican;

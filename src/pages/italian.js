@@ -1,13 +1,9 @@
-import React, { Component } from 'react';
-
-class Italian extends Component {
-  render() {
+const Italian = () => {
     return (
       <div>
-        
+        italian page
       </div>
     );
   }
-}
 
 export default Italian;

@@ -1,13 +1,9 @@
-import React, { Component } from 'react';
-
-class American extends Component {
-  render() {
+const American = () =>{
     return (
       <div>
-        
+        American page
       </div>
     );
-  }
 }
 
 export default American;

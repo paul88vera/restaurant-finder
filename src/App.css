@@ -336,4 +336,8 @@ input:focus{
   #cuisine-choices h4 {
     font-size: 2rem;
   }
+  #main-banner img {
+    max-height: 500px;
+    background-size: cover;
+  }
  }

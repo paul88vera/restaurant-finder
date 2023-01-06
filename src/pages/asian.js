@@ -1,13 +1,9 @@
-import React, { Component } from 'react';
-
-class Asian extends Component {
-  render() {
+const Asian = () => {
     return (
       <div>
-        
+        Asian page
       </div>
     );
   }
-}
 
 export default Asian;

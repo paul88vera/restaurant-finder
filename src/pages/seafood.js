@@ -1,13 +1,9 @@
-import React, { Component } from 'react';
-
-class Seafood extends Component {
-  render() {
+const Seafood = () => {
     return (
       <div>
-        
+        Seafood page
       </div>
     );
   }
-}
 
 export default Seafood;

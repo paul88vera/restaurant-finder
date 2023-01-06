@@ -1,13 +1,9 @@
-import React, { Component } from 'react';
-
-class Barbecue extends Component {
-  render() {
+const Barbecue = () => {
     return (
       <div>
-        
+        bbq page
       </div>
     );
   }
-}
 
 export default Barbecue;
