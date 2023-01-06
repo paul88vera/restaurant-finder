@@ -22,6 +22,8 @@ const cuisine = [
   {id: 2, name: "Seafood"},
   {id: 3, name: "American"},
   {id: 4, name: "Asian"},
+  {id: 5, name: "Barbecue"},
+  {id: 6, name: "Italian"},
 ]
 
 const restaurant = [
