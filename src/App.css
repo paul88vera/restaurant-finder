@@ -324,7 +324,42 @@ input:focus{
  .asian {
   background-image: url(/src/assets/img/asian.jpeg);
  }
+/*--------------
+  Restaurant Cards 
+ --------------*/
 
+ .cuisine-card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  gap: 1em;
+  margin: 1em auto;
+  padding: 1em;
+  width: 100%;
+ }
+ .cuisine-card {
+  display: flex;
+  flex-direction: row;
+  height: 91px;
+  max-width: 600px;
+  min-width: fit-content;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: rgba(121, 121, 121, 0.541) 0px 1px 10px;
+ }
+ .cuisine-card-img {
+  box-sizing: border-box;
+}
+.cuisine-card-img img {
+   border-top-left-radius: 10px;
+   border-bottom-left-radius: 10px;
+  height: max-content;
+ }
+ .cuisine-card-text {
+  padding: .5em;
+  font-size: 1rem;
+ }
  @media screen and (min-width: 768px) {
   .cuisine-type {
     max-width: 200px;

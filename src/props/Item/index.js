@@ -2,8 +2,8 @@ export default function Restuarant() {
   return (
     <div id="restuarant">
        <picture id='main-banner'>
-        <source media="(min-width:728px)" srcset="https://unsplash.it/1250/500" />
-        <img src="https://unsplash.it/700/400" width="100%" alt="" />
+        {/* <source media="(min-width:728px)" srcset="https://unsplash.it/1250/500" /> */}
+        <img src="../assets/img/restaurant-banner.jpeg" width="100%" alt="" />
       </picture>
 
       <div className="restaurant-details">
@@ -21,10 +21,10 @@ just two years later.</p>
         <a href="tel:2105019271">
         <img src="https://unsplash.it/100" width="70px" alt="" />
         CALL NOW</a>
-        <a href="#">
+        <a href="#/">
         <img src="https://unsplash.it/100" width="70px" alt="" />
         VIEW MAP</a>
-        <a href="#">
+        <a href="#/">
         <img src="https://unsplash.it/100" width="70px" alt="" />
         WEBSITE</a>
       </div>
