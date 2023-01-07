@@ -335,11 +335,10 @@ input:focus{
   align-content: center;
   gap: 1em;
   margin: 1em auto;
-  padding: 1em;
-  width: 100%;
  }
  .cuisine-card {
   display: flex;
+  margin: .1em 1em;
   flex-direction: row;
   height: 91px;
   max-width: 600px;
