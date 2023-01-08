@@ -1,9 +1,12 @@
+import Navbar from '../components/Navbar';
 import Banner from '../components/Banner';
 
 const Barbecue = () => {
     return (
       <div id="restuarant">
-       <Banner />
+
+       <Navbar />
+        <Banner />
 
       <div className="restaurant-details">
         <h2>Jerky Shack</h2>

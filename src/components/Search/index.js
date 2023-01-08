@@ -1,5 +1,7 @@
 import React from "react";
 
+import Home from '../../pages/home';
+
 
 class Search extends React.Component {
   constructor(props) {
@@ -22,7 +24,7 @@ class Search extends React.Component {
   render() {
   return (
     <section id="search-container">
-     <form className="form-container right-inner-addon input-container">
+     <form className="form-container right-inner-addon input-container" onSubmit={<Home />}>
       <i className="fa fa-map-marker"></i>
             <input type="text"
                    className="form-control" 

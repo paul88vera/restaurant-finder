@@ -327,7 +327,12 @@ input:focus{
 /*--------------
   Restaurant Cards 
  --------------*/
-
+.cuisine-gallery {
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  margin: 0 auto;
+}
  .cuisine-card-container {
   display: flex;
   flex-direction: column;
@@ -336,13 +341,18 @@ input:focus{
   gap: 1em;
   margin: 1em auto;
  }
+ .cuisine-title {
+  text-align: center;
+  padding: 1em;
+  font-size: 1.5rem;
+  font-weight: 100;
+ }
  .cuisine-card {
   display: flex;
-  margin: .1em 1em;
   flex-direction: row;
   height: 91px;
+  width: 285px;
   max-width: 600px;
-  min-width: fit-content;
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: rgba(121, 121, 121, 0.541) 0px 1px 10px;
@@ -359,6 +369,11 @@ input:focus{
   padding: .5em;
   font-size: 1rem;
  }
+@media screen and (min-width:468px) {
+  .cuisine-card {
+    width: 400px;
+  }
+}
  @media screen and (min-width: 768px) {
   .cuisine-type {
     max-width: 200px;
@@ -371,7 +386,14 @@ input:focus{
     font-size: 2rem;
   }
   #main-banner img {
-    max-height: 500px;
+    max-height: 400px;
     background-size: cover;
+  }
+  .cuisine-title {
+    font-size: 2rem;
+    font-weight: 200;
+  }
+  .cuisine-card {
+    width: 600px;
   }
  }

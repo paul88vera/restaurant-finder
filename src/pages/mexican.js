@@ -1,12 +1,16 @@
+import Navbar from '../components/Navbar';
 import Banner from '../components/Banner';
 import Temp from '../assets/img/bbq.jpeg';
+
+//TODO: 1. make into a prop and apply to all other cuisine pages
 
 const Mexican = () => {
   // const data = props.data;
     return (
       <div className="cuisine-gallery">
+        <Navbar />
         <Banner />
-        <h4 className='cuisine-title'>Food</h4>
+        <h4 className='cuisine-title'>Mexican Food</h4>
 
         <section className="cuisine-card-container">
 
@@ -50,7 +54,6 @@ const Mexican = () => {
             <h3>Restaurant Name</h3>
             </div>
           </div>
-
 
         </section>
         
