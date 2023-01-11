@@ -1,64 +1,41 @@
-import Navbar from '../components/Navbar';
-import Banner from '../components/Banner';
-import Temp from '../assets/img/bbq.jpeg';
+import  Banner from '../components/Banner';
+import  Navbar from '../components/Navbar';
 
-//TODO: 1. make into a prop and apply to all other cuisine pages
+import Selection from '../props/selection';
+
+import { useState } from "react";
 
 const Mexican = () => {
-  // const data = props.data;
-    return (
-      <div className="cuisine-gallery">
-        <Navbar />
-        <Banner />
-        <h4 className='cuisine-title'>Mexican Food</h4>
+  const [selectionData] = useState([
+    {
+      id: 1,
+      img: "../assets/img/bbq.jpeg",
+      alt: "This is an alt image",
+      city: "San Antonio",
+      cuisine: "Mexican",
+      name: "Don Pedro's",
+    },
+    {
+      id: 2,
+      img: "../assets/img/bbq.jpeg",
+      alt: "This is an alt image",
+      city: "San Antonio",
+      cuisine: "Mexican",
+      name: "Don Pedro's Too",
+    },
+  ]);
 
-        <section className="cuisine-card-container">
-
-          <div className="cuisine-card">
-            <div className='cuisine-card-img'>
-            <img src={Temp} alt="square alt stuff" width="100" />
-            </div>
-            <div className='cuisine-card-text'>
-            <h4>San Antonio</h4>
-            <p>Mexican</p>
-            <h3>Restaurant Name</h3>
-            </div>
-          </div>
-          <div className="cuisine-card">
-            <div className='cuisine-card-img'>
-            <img src={Temp} alt="square alt stuff" width="100" />
-            </div>
-            <div className='cuisine-card-text'>
-            <h4>San Antonio</h4>
-            <p>Mexican</p>
-            <h3>Restaurant Name</h3>
-            </div>
-          </div>
-          <div className="cuisine-card">
-            <div className='cuisine-card-img'>
-            <img src={Temp} alt="square alt stuff" width="100" />
-            </div>
-            <div className='cuisine-card-text'>
-            <h4>San Antonio</h4>
-            <p>Mexican</p>
-            <h3>Restaurant Name</h3>
-            </div>
-          </div>
-          <div className="cuisine-card">
-            <div className='cuisine-card-img'>
-            <img src={Temp} alt="square alt stuff" width="100" />
-            </div>
-            <div className='cuisine-card-text'>
-            <h4>San Antonio</h4>
-            <p>Mexican</p>
-            <h3>Restaurant Name</h3>
-            </div>
-          </div>
-
-        </section>
-        
-      </div>
-    );
-  }
+  return (
+    <div className="cuisine-gallery">
+      <Navbar />
+      <Banner />
+      <h4 className="cuisine-title">Mexican Food</h4>
+      <Selection
+        selection={selectionData}
+        key={selectionData.id}
+      />
+    </div>
+  );
+};
 
 export default Mexican;
