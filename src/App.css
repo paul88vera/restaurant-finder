@@ -2,8 +2,21 @@
   margin: 0;
   padding: 0;
 }
+body {
+  max-width: 900px;
+  margin: 0 auto;
+}
 /*-------------------
-    SPLASH PAGE 
+    ICONS - START
+ -------------------*/
+ .svg-inline--fa {
+  color: #fff;
+  padding: 1em;
+  font-size: 2em;
+ }
+ 
+/*-------------------
+    SPLASH - START
  -------------------*/
  #splash-container{
   width: 100%;
@@ -61,7 +74,7 @@ input:focus{
   cursor: pointer;
 }
 /*----------------------
- COMPONENT : LOGIN INPUTS 
+ LOGIN INPUT - START
  ----------------------*/
 #login-container{
   width: 100%;
@@ -117,13 +130,12 @@ input:focus{
   color: rgb(11, 235, 255);
 }
 /*-------------------
-      SIGNUP PAGE 
+    SIGNUP - START
  --------------------*/
 #signup-container {
   width: 100%;
   height: 100vh;
   background-color: rgb(0, 0, 0);
-  /* background-image: url(/public/assets/img/AdobeStock_301716089_Preview.png); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: top;
@@ -175,10 +187,11 @@ input:focus{
   background-color: rgb(23, 73, 39);
 }
 /*-----------------
-   Navbar Component  
+   NAVBAR - START  
 -------------------*/
 #navbar {
   width: 100%;
+  max-width: 900px;
   height: 9vh;
   margin-top: .5em;
   border-radius: 50px;
@@ -198,7 +211,7 @@ input:focus{
   cursor: pointer;
 }
 /*-------------------
-   HOME PAGE  
+   HOME - START  
 ------------------*/
 #main-banner img {
   box-sizing: border-box;
@@ -206,7 +219,7 @@ input:focus{
   border-bottom-right-radius: 20px;
 }
 /*-------------------
-   Cuisine for Homepage 
+   CUISINE - START 
 ------------------*/
 .cuisine-main-link {
   text-decoration: none;
@@ -263,7 +276,7 @@ input:focus{
   left: -20px;
 }
 /*---------------------
- Restaurant Details COMPONENT 
+ RESTAURANT DETAILS - START 
  ----------------------*/
 #restaurant {
   display: flex;
@@ -295,7 +308,7 @@ input:focus{
 }
 /*TODO: Complete the Restaurant Item component & Browse Page */
 /*--------------
-  BROWSE PAGE 
+  BROWSE - START
  --------------*/
  .mexican, .seafood, .american, .italian, .asian, .barbecue {
   box-sizing: border-box;
@@ -324,9 +337,9 @@ input:focus{
  .asian {
   background-image: url(/src/assets/img/asian.jpeg);
  }
-/*--------------
-  Restaurant Cards 
- --------------*/
+/*-------------------------
+  RESTAURANT CARDS  - START
+ -------------------------*/
 .cuisine-gallery {
   display: flex;
   flex-direction: column;

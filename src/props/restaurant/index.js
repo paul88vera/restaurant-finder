@@ -19,18 +19,9 @@ export default function Restaurant(props, {closeModal}) {
           </div>
           <br />
           <div id="social-links">
-            <a href={data.phone}>
-              <img src="https://unsplash.it/100" width="70px" alt="" />
-              CALL NOW
-            </a>
-            <a href={data.map}>
-              <img src="https://unsplash.it/100" width="70px" alt="" />
-              VIEW MAP
-            </a>
-            <a href={data.website}>
-              <img src="https://unsplash.it/100" width="70px" alt="" />
-              WEBSITE
-            </a>
+            <a href={data.phone}><i class="fa-solid fa-mobile-screen-button"></i></a>
+            <a href={data.map}><i class="fa-solid fa-map-location-dot"></i></a>
+            <a href={data.website}><i class="fa-solid fa-laptop"></i></a>
           </div>
         </div>
       ))}
