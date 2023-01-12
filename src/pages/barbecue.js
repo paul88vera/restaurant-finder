@@ -1,14 +1,12 @@
 import Navbar from '../components/Navbar';
 import Banner from '../components/Banner';
 
-import { data } from '../constants/data';
-
 const Barbecue = () => {
     return (
       <div id="restuarant">
 
-       <Navbar />
-        <Banner />
+      <Navbar />
+      <Banner />
 
       <div className="restaurant-details">
         <h2>Jerky Shack</h2>
@@ -22,9 +20,9 @@ just two years later.</p>
       </div>
     <br/>
     <div id="social-links">
-            <a href='/'><i class="fa-solid fa-mobile-screen-button"></i></a>
-            <a href='/'><i class="fa-solid fa-map-location-dot"></i></a>
-            <a href='/'><i class="fa-solid fa-laptop"></i></a>
+            <a href='/' className='icon-container'><i className="fa-solid fa-mobile-screen-button"></i><span>Phone</span></a>
+            <a href='/' className='icon-container'><i className="fa-solid fa-map-location-dot"></i><span>Map</span></a>
+            <a href='/' className='icon-container'><i className="fa-solid fa-laptop"></i><span>Website</span></a>
           </div>
     </div>
     );

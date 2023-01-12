@@ -9,12 +9,25 @@ body {
 /*-------------------
     ICONS - START
  -------------------*/
- .svg-inline--fa {
-  color: #fff;
-  padding: 1em;
-  font-size: 2em;
+ .fa-mobile-screen-button, .fa-map-location-dot, .fa-laptop {
+  color: rgb(242, 204, 138);
+  font-size: 2rem;
  }
- 
+.fa-circle-chevron-left, .fa-gg-circle, .fa-bars {
+  padding: 1em;
+  color: #fff;
+  font-size: 1.5rem;
+}
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  gap: 0;
+}
+.icon-container span {
+  color: black;
+  padding: 1em 0;
+}
 /*-------------------
     SPLASH - START
  -------------------*/
@@ -204,12 +217,6 @@ input:focus{
   align-content: center;
   align-items: center;
 }
-.navbar-icon {
-  width: 40px;
-  height: 40px;
-  margin: 0 2em;
-  cursor: pointer;
-}
 /*-------------------
    HOME - START  
 ------------------*/
@@ -248,12 +255,13 @@ input:focus{
   gap: 2em;
   
 }
-.cuisine-contianer {
-  max-width: 100%;
-  width: 320px;
-  padding: 0em;
+#cuisine-card-container {
+  width: 95%;
+  max-width: 900px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
 }
 .desc {
   bottom: -20px;
@@ -346,13 +354,14 @@ input:focus{
   max-width: 900px;
   margin: 0 auto;
 }
- .cuisine-card-container {
+ #cuisine-card-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
   gap: 1em;
   margin: 1em auto;
+  align-items: center;
  }
  .cuisine-title {
   text-align: center;
@@ -364,7 +373,7 @@ input:focus{
   display: flex;
   flex-direction: row;
   height: 91px;
-  width: 285px;
+  width: auto;
   max-width: 600px;
   background-color: #ffffff;
   border-radius: 10px;
@@ -384,7 +393,7 @@ input:focus{
  }
 @media screen and (min-width:468px) {
   .cuisine-card {
-    width: 400px;
+    width: 100%;
   }
 }
  @media screen and (min-width: 768px) {
@@ -407,6 +416,9 @@ input:focus{
     font-weight: 200;
   }
   .cuisine-card {
-    width: 600px;
+    max-width: 600px;
+  }
+  .fa-circle-chevron-left, .fa-gg-circle, .fa-bars {
+    font-size: 2rem;
   }
  }
