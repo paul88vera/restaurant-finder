@@ -41,4 +41,4 @@ const selectionData = [
 },
 ]
 
-export {selectionData, modalData};
+export default {selectionData, modalData};

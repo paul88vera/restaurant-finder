@@ -19,8 +19,8 @@ export default function App() {
   return (
     <BrowserRouter>
     <Routes>
-      <Route index path='/' element={<Splash />} />
-      <Route path ="home" element={<Home />} />
+      <Route index path ="/" element={<Home />} />
+      <Route path='/search' element={<Splash />} />
       <Route path ="SanAntonio/Mexican" element={<Mexican />} />
       <Route path ="SanAntonio/Seafood" element={<Seafood />} />
       <Route path ="SanAntonio/Italian" element={<Italian />} />

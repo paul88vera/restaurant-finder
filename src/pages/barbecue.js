@@ -5,8 +5,8 @@ const Barbecue = () => {
     return (
       <div id="restuarant">
 
-       <Navbar />
-        <Banner />
+      <Navbar />
+      <Banner />
 
       <div className="restaurant-details">
         <h2>Jerky Shack</h2>
@@ -19,17 +19,11 @@ restaurant, The Jerk Shack, with her husband Cornelius Massey
 just two years later.</p>
       </div>
     <br/>
-      <div id="social-links">
-        <a href="tel:2105019271">
-        <img src="https://unsplash.it/100" width="70px" alt="" />
-        CALL NOW</a>
-        <a href="#/">
-        <img src="https://unsplash.it/100" width="70px" alt="" />
-        VIEW MAP</a>
-        <a href="#/">
-        <img src="https://unsplash.it/100" width="70px" alt="" />
-        WEBSITE</a>
-      </div>
+    <div id="social-links">
+            <a href='/' className='icon-container'><i className="fa-solid fa-mobile-screen-button"></i><span>Phone</span></a>
+            <a href='/' className='icon-container'><i className="fa-solid fa-map-location-dot"></i><span>Map</span></a>
+            <a href='/' className='icon-container'><i className="fa-solid fa-laptop"></i><span>Website</span></a>
+          </div>
     </div>
     );
   }

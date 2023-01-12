@@ -1,4 +1,4 @@
-export default function Restaurant(props, {closeModal}) {
+export default function Restaurant(props, { closeModal }) {
   const data = props.data;
 
   return (
@@ -8,7 +8,7 @@ export default function Restaurant(props, {closeModal}) {
           <picture id="main-banner">
             <img src={data.image} width="100%" alt={data.imgAlt} />
           </picture>
-          <button className="btn" onClick={()=> {closeModal(false)}}>
+          <button className="btn" onClick={() => closeModal(false)}>
             X
           </button>
           <div className="restaurant-details">
@@ -19,18 +19,9 @@ export default function Restaurant(props, {closeModal}) {
           </div>
           <br />
           <div id="social-links">
-            <a href={data.phone}>
-              <img src="https://unsplash.it/100" width="70px" alt="" />
-              CALL NOW
-            </a>
-            <a href={data.map}>
-              <img src="https://unsplash.it/100" width="70px" alt="" />
-              VIEW MAP
-            </a>
-            <a href={data.website}>
-              <img src="https://unsplash.it/100" width="70px" alt="" />
-              WEBSITE
-            </a>
+            <a href={data.phone} className='icon-container'><i className="fa-solid fa-mobile-screen-button"></i><span>Phone</span></a>
+            <a href={data.map} className='icon-container'><i className="fa-solid fa-map-location-dot"></i><span>Map</span></a>
+            <a href={data.website} className='icon-container'><i className="fa-solid fa-laptop"></i><span>Website</span></a>
           </div>
         </div>
       ))}

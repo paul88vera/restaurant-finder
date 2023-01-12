@@ -6,7 +6,7 @@ import mexican from '../assets/img';
 import seafood from '../assets/img';
 import restaurantBanner from '../assets/img';
 
-export {
+export default {
  american,
  asian,
  bbq,
